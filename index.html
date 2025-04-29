@@ -30,22 +30,22 @@
     </style>
   </head>
   <body>
-  <div class="header">
-    <h1>S-Orbital</h1>
-    <p>A 10th grade Pre-IB student.</p>
-    
-  </div>
-     <p id="bio">Loading bio...</p>
+ <body>
+    <p id="bio">Loading bio...</p>
 
     <script>
-      async function updateBio() {
-        const res = await fetch('http://localhost:3000/bio');
-        const bio = await res.text();
-        document.getElementById('bio').innerText = bio;
-      }
+      const updateBio = async () => {
+        try {
+          const res = await fetch('https://your-app.onrender.com/bio'); // 👈 replace this with your actual Render URL
+          const bio = await res.text();
+          document.getElementById('bio').innerText = bio;
+        } catch (err) {
+          console.error("Failed to fetch bio:", err);
+        }
+      };
 
-      updateBio(); // initial
-      setInterval(updateBio, 60000); // every minute
+      updateBio(); // initial fetch
+      setInterval(updateBio, 60000); // update every 60s
     </script>
   </body>
 </html>
