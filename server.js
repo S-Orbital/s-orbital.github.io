@@ -8,12 +8,12 @@ app.use(cors());
 
 let githubBio = '';
 
-const username = 'your-username'; // replace with your GitHub username
+const username = 'S-Orbital'; // replace with your GitHub username
 
 const fetchBio = async () => {
   try {
     const res = await axios.get(`https://api.github.com/users/${username}`);
-    githubBio = res.data.bio || 'No bio set.';
+    githubBio = res.data.bio || 'Nothing here.';
   } catch (err) {
     console.error('Failed to fetch GitHub bio');
   }
