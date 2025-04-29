@@ -11,11 +11,21 @@
         font-family: "Bernhard-Gothic";
         src: url("BernhardGothicURW-Heavy.ttf") format('truetype');
       }
-
-      body {
-        font-family: "Bernhard-Gothic", sans-serif;
+      @font-face {
+        font-family: "Mont";
+        src: url("Mont-ExtraLight.oft") format('opentype');
       }
-
+      @font-face {
+        font-family: "Mont-Heavy";
+        src: url("Mont-Heavy.otf") format('opentype');
+      }
+      
+      body {
+        font-family: "Mont", sans-serif;
+      }
+      h1 {
+        font-family: "Mont-Heavy", sans-serif;
+      }
       
     </style>
   </head>
