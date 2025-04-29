@@ -16,7 +16,7 @@ const fetchBio = async () => {
     githubBio = res.data.bio || 'Nothing here.';
     console.log("Fetched bio:", githubBio);
   } catch (err) {
-    console.error('Failed to fetch GitHub bio');
+    console.error('Failed to fetch GitHub bio', err.response?.data || err.message);
   }
 };
 
