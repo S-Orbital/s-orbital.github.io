@@ -31,21 +31,19 @@
   </head>
   <body>
  <body>
-    <p id="bio">Loading bio...</p>
+   <p id="bio">Loading bio...</p>
+<img id="avatar" src="" alt="Profile Image" width="100" />
 
-    <script>
-      const updateBio = async () => {
-        try {
-          const res = await fetch('https://s-orbital-github-io.onrender.com/bio'); // 👈 replace this with your actual Render URL
-          const bio = await res.text();
-          document.getElementById('bio').innerText = bio;
-        } catch (err) {
-          console.error("Failed to fetch bio:", err);
-        }
-      };
+<script>
+  const updateBio = async () => {
+    const res = await fetch('https://your-app.onrender.com/bio');
+    const data = await res.json();
+    document.getElementById('bio').innerText = data.bio;
+    document.getElementById('avatar').src = data.avatar_url;
+  };
 
-      updateBio(); // initial fetch
-      setInterval(updateBio, 60000); // update every 60s
-    </script>
+  updateBio();
+  setInterval(updateBio, 60000);
+</script>
   </body>
 </html>
