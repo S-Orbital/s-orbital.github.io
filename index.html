@@ -3,12 +3,14 @@
   <head>
     <title>S-Orbital Personal Website</title>
     <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
     
   </head>
   <body>
     <p id="bio">[...]</p>
     <img id="avatar" src="" alt="Profile Image" width="100" />
-
+    <div id="readme">Loading...</div>
     <script>
       async function updateBio() {
         try {
@@ -25,6 +27,16 @@
 
       updateBio();
       setInterval(updateBio, 60000);
+    </script>
+
+    <script>
+      async function loadReadme() {
+        const res = await fetch('https://raw.githubusercontent.com/S-Orbital/S-Orbital/main/README.md');
+        const md = await res.text();
+        document.getElementById('readme').innerHTML = marked.parse(md);
+      }
+
+      loadReadme();
     </script>
   </body>
 </html>
