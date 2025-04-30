@@ -1,49 +1,28 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
   <head>
-    <title>@S-Orbital</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="S-Orbital Personal Website">
-    <base href="s-orbital.github.io" target="_blank">
-
-    <style>
-      @font-face {
-        font-family: "Bernhard-Gothic";
-        src: url("BernhardGothicURW-Heavy.ttf") format('truetype');
-      }
-      @font-face {
-        font-family: "Mont";
-        src: url("Mont-ExtraLight.oft") format('opentype');
-      }
-      @font-face {
-        font-family: "Mont-Heavy";
-        src: url("Mont-Heavy.otf") format('opentype');
-      }
-      
-      body {
-        font-family: "Mont", sans-serif;
-      }
-      h1 {
-        font-family: "Mont-Heavy", sans-serif;
-      }
-      
-    </style>
+    <title>GitHub Info</title>
   </head>
   <body>
- <body>
-   <p id="bio">Loading bio...</p>
-<img id="avatar" src="" alt="Profile Image" width="100" />
+    <p id="bio">Loading bio...</p>
+    <img id="avatar" src="" alt="Profile Image" width="100" />
 
-<script>
-  const updateBio = async () => {
-    const res = await fetch('https://s-orbital-github-io.onrender.com');
-    const data = await res.json();
-    document.getElementById('bio').innerText = data.bio;
-    document.getElementById('avatar').src = data.avatar_url;
-  };
+    <script>
+      async function updateBio() {
+        try {
+          const res = await fetch('https://s-orbital-github-io.onrender.com/bio');
+          const data = await res.json();
 
-  updateBio();
-  setInterval(updateBio, 60000);
-</script>
+          document.getElementById('bio').innerText = data.bio || 'No bio';
+          document.getElementById('avatar').src = data.avatar_url || '';
+        } catch (err) {
+          console.error('Fetch failed:', err);
+          document.getElementById('bio').innerText = 'Error loading bio.';
+        }
+      }
+
+      updateBio();
+      setInterval(updateBio, 60000);
+    </script>
   </body>
 </html>
