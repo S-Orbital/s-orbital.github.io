@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Mont";
+  src: url('Mont-ExtraLight.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body, p {
+  font-family: "Mont", sans-serif;
+  font-weight: 600;
+}
