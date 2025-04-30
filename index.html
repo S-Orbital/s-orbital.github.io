@@ -36,7 +36,7 @@
 
 <script>
   const updateBio = async () => {
-    const res = await fetch('https://your-app.onrender.com/bio');
+    const res = await fetch('https://s-orbital-github-io.onrender.com');
     const data = await res.json();
     document.getElementById('bio').innerText = data.bio;
     document.getElementById('avatar').src = data.avatar_url;
