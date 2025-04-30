@@ -8,20 +8,23 @@
     
   </head>
   <body style="background-color: black;">
-    <p id="bio">[...]</p>
-    <img id="avatar" src="" alt="Profile Image" width="100" />
-    <div id="readme">Loading...</div>
+    <p>@S-Orbital</p>
+    <p id="gitname"></p>
+    <p id="bio"></p>
+    <img id="avatar" src="" alt="" width="100">
+    <div id="readme"></div>
     <script>
       async function updateBio() {
         try {
           const res = await fetch('https://s-orbital-github-io.onrender.com/bio');
           const data = await res.json();
 
-          document.getElementById('bio').innerText = data.bio || 'No bio';
+          document.getElementById('bio').innerText = data.bio || '';
           document.getElementById('avatar').src = data.avatar_url || '';
+          document.getElementById('gitname').innerText = data.name || '';
         } catch (err) {
           console.error('Fetch failed:', err);
-          document.getElementById('bio').innerText = 'Error loading bio.';
+          document.getElementById('bio').innerText = '';
         }
       }
 
