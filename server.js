@@ -5,32 +5,33 @@ const cors = require('cors');
 const app = express();
 app.use(cors());
 
-let githubBio = '';
-const username = 's-orbital'; // 👈 your GitHub username
+const username = 's-orbital';
+let githubData = {
+  bio: '',
+  avatar_url: ''
+};
 
-const fetchBio = async () => {
+const fetchGitHubData = async () => {
   try {
     const res = await axios.get(`https://api.github.com/users/${username}`, {
       headers: {
-        Authorization: `token ${process.env.GITHUB_TOKEN}` // 👈 uses token from env var
+        Authorization: `token ${process.env.GITHUB_TOKEN}`
       }
     });
-    githubBio = res.data.bio || 'No bio set.';
-    console.log("Fetched bio:", githubBio);
+    githubData.bio = res.data.bio || 'No bio set.';
+    githubData.avatar_url = res.data.avatar_url || '';
+    console.log('Fetched GitHub data:', githubData);
   } catch (err) {
-    console.error('Error fetching GitHub bio:', err.response?.data || err.message);
+    console.error('Error fetching GitHub data:', err.response?.data || err.message);
   }
 };
 
-setInterval(fetchBio, 60000); // every minute
-fetchBio(); // initial call
+setInterval(fetchGitHubData, 60000);
+fetchGitHubData();
 
 app.get('/bio', (req, res) => {
-  res.send(githubBio);
+  res.json(githubData);
 });
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-
-
-app.listen(3000, () => console.log('Server running on port 3000'));
