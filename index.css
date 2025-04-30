@@ -3,15 +3,21 @@
   src: url('Mont-ExtraLight.otf') format('opentype');
   font-style: normal;
 }
-
+@font-face {
+  font-family: "Mont-Heavy";
+  src: url('Mont-Heavy.otf') format('opentype');
+  font-style: normal;
+}
+body {
+  background-color: black;
+}
 body, p {
   font-family: "Mont", sans-serif;
   font-weight: 400;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Mont", sans-serif;
+  font-family: "Mont-Heavy", sans-serif;
   font-weight: 900;
-  color: black;
 }
 .aboutMe {
   color: #091473;
