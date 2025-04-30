@@ -1,11 +1,15 @@
 @font-face {
   font-family: "Mont";
   src: url('Mont-ExtraLight.otf') format('opentype');
-  font-weight: normal;
   font-style: normal;
 }
 
 body, p {
   font-family: "Mont", sans-serif;
+  font-weight: 400;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Mont", sans-serif;
   font-weight: 900;
+  color: #091473;
 }
