@@ -1,0 +1,1 @@
+var statisticFarming = "blue"
