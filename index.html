@@ -4,6 +4,8 @@
     <title>S-Orbital Personal Website</title>
     <link rel="stylesheet" href="index.css">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emojione@4.5.0/lib/js/emojione.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/emojione@4.5.0/extras/css/emojione.min.css"/>
   </head>
   <body style="background-color: black;">
     <p>@S-Orbital</p>
@@ -25,7 +27,7 @@
 
           // 🆕 Add status message with emoji
           if (data.status && (data.status.message || data.status.emoji)) {
-            document.getElementById('status').innerText = `${data.status.emoji || ''} ${data.status.message || ''}`;
+            const rawStatus = `${data.status.emoji || ''} ${data.status.message || ''}`; document.getElementById('status').innerHTML = emojione.shortnameToImage(rawStatus);
           } else {
             document.getElementById('status').innerText = '';
           }
