@@ -22,6 +22,9 @@ body, p {
 h4, h5, h6 {
   font-family: "Utendo-Semibold", sans-serif;
 }
+h1, h2, h3 {
+  font-family: "Utendo-Bold", sans-serif;
+}
 .aboutMe, body {
   color: #091473;
 }
