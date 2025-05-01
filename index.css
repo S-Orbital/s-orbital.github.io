@@ -16,10 +16,10 @@
 body {
   background-color: black;
 }
-body, p {
+body {
   font-family: "Utendo", sans-serif;
 }
-h4, h5, h6 {
+h4, h5, h6, p {
   font-family: "Utendo-Semibold", sans-serif;
 }
 h1, h2, h3 {
