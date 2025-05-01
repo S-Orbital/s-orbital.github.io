@@ -4,15 +4,15 @@
     <title>S-Orbital Personal Website</title>
     <link rel="stylesheet" href="index.css">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-
-    
   </head>
   <body style="background-color: black;">
     <p>@S-Orbital</p>
     <p id="gitname"></p>
     <p id="bio"></p>
+    <p id="status"></p> <!-- 🆕 Added status element -->
     <img id="avatar" src="" alt="" width="100">
     <div id="readme"></div>
+
     <script>
       async function updateBio() {
         try {
@@ -22,9 +22,18 @@
           document.getElementById('bio').innerText = data.bio || '';
           document.getElementById('avatar').src = data.avatar_url || '';
           document.getElementById('gitname').innerText = data.name || '';
+
+          // 🆕 Add status message with emoji
+          if (data.status && (data.status.message || data.status.emoji)) {
+            document.getElementById('status').innerText = `${data.status.emoji || ''} ${data.status.message || ''}`;
+          } else {
+            document.getElementById('status').innerText = '';
+          }
+
         } catch (err) {
           console.error('Fetch failed:', err);
           document.getElementById('bio').innerText = '';
+          document.getElementById('status').innerText = '';
         }
       }
 
