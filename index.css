@@ -8,13 +8,18 @@
   src: url('Utendo-Semibold.ttf') format('truetype');
   font-style: normal;
 }
+@font-face {
+  font-family: "Utendo-Bold";
+  src: url('Utendo-ExtraBold.ttf') format('truetype');
+  font-style: normal;
+}
 body {
   background-color: black;
 }
 body, p {
-  font-family: "Utendo-Light", sans-serif;
+  font-family: "Utendo", sans-serif;
 }
-h1, h2, h3, h4, h5, h6 {
+h4, h5, h6 {
   font-family: "Utendo-Semibold", sans-serif;
 }
 .aboutMe, body {
