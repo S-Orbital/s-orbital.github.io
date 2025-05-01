@@ -28,3 +28,11 @@ h1, h2, h3 {
 .aboutMe, body {
   color: #091473;
 }
+#header {
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  background:  50  #2204CC;
+  background: linear-gradient(180deg,rgba(0, 0, 0, 1) 28%, rgba(5, 0, 36, 1) 72%);
+
+}
