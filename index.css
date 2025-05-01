@@ -30,13 +30,33 @@ h1, h2, h3 {
   color: #091473;
 }
 #header {
-  text-align: center;
-  margin: auto;
-  padding: 10px;
-  background:  50  #2204CC;
-  background: linear-gradient(180deg,rgba(0, 0, 0, 1) 28%, rgba(5, 0, 36, 1) 72%);
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 28%, rgba(5, 0, 36, 1) 72%);
+  color: #091473;
 }
 img {
   border-radius: 50%;
+}
+
+#header img {
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+#header .text-group h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-family: "Utendo-Bold", sans-serif;
+}
+
+#header .text-group #status {
+  margin: 5px 0;
+  font-family: "Utendo-Semibold", sans-serif;
+}
+
+#header .text-group #bio {
+  font-size: 0.9rem;
+  font-family: "Utendo", sans-serif;
 }
