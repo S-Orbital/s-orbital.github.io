@@ -1,16 +1,16 @@
 @font-face {
   font-family: "Utendo";
-  src: url('Utendo-Light.ttf') format('truetype');
+  src: url('fonts/Utendo-Light.ttf') format('truetype');
   font-style: normal;
 }
 @font-face {
   font-family: "Utendo-Semibold";
-  src: url('Utendo-Semibold.ttf') format('truetype');
+  src: url('fonts/Utendo-Semibold.ttf') format('truetype');
   font-style: normal;
 }
 @font-face {
   font-family: "Utendo-Bold";
-  src: url('Utendo-ExtraBold.ttf') format('truetype');
+  src: url('fonts/Utendo-ExtraBold.ttf') format('truetype');
   font-style: normal;
 }
 body {
