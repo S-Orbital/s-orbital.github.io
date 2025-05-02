@@ -28,6 +28,7 @@ h1, h2, h3 {
 }
 .aboutMe, body {
   color: #091473;
+  font-size: 250%;
 }
 #header {
   display: flex;
