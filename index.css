@@ -52,15 +52,12 @@ img {
   font-family: "Utendo-Bold", sans-serif;
 }
 
-#header .text-group #status {
+#header .text-group #status, #header .text-group #bio {
   margin: 5px 0;
   font-family: "Utendo-Semibold", sans-serif;
 }
 
-#header .text-group #bio {
-  font-size: 0.9rem;
-  font-family: "Utendo", sans-serif;
-}
+
 .text-group {
   display: block;
 }
