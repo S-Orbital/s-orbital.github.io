@@ -107,12 +107,13 @@ h1.aboutMe, h2.aboutMe, h3.aboutMe, #username, p.aboutMe {
 
 @keyframes glowPulse {
   0%, 100% {
-    text-shadow: 0 0 5px #091473, 0 0 10px #091473, 0 0 20px #091473;
+    text-shadow: 0 0 10px #091473, 0 0 20px #091473, 0 0 40px #091473;
   }
   50% {
-    text-shadow: 0 0 10px #050c4d, 0 0 20px #050c4d, 0 0 40px #050c4d;
+    text-shadow: 0 0 20px #050c4d, 0 0 40px #050c4d, 0 0 80px #050c4d;
   }
 }
+
 
 p.aboutMe {
   position: relative;
