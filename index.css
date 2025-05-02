@@ -98,3 +98,6 @@ a {
   font-size: 1.1rem;
   color: #091473;
 }
+.hidden {
+  visibility: hidden;
+}
