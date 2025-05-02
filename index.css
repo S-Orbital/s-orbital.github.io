@@ -60,3 +60,6 @@ img {
   font-size: 0.9rem;
   font-family: "Utendo", sans-serif;
 }
+.text-group {
+  display: block;
+}
