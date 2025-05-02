@@ -116,7 +116,7 @@ h1.aboutMe, h2.aboutMe, h3.aboutMe, #username {
 
 p.aboutMe {
   position: relative;
-  display: inline;
+  display: inline-block;
   color: #091473;
   transition: color 0.3s ease;
   background-image: linear-gradient(white, white);
@@ -124,6 +124,9 @@ p.aboutMe {
   background-repeat: no-repeat;
   background-position: 0 100%;
   transition: background-size 0.3s ease, color 0.3s ease;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #091473;
+  display: block;
 }
 
 p.aboutMe:hover {
