@@ -102,3 +102,7 @@ a {
   color: #091473;
 }
 
+.center-container {
+  justify-content: center;
+  align-items: center;
+}
