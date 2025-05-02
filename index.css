@@ -73,8 +73,9 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: start;
+  justify-content: center;
   padding: 20px;
+  align-items: center;
 }
 
 .projects {
@@ -86,6 +87,8 @@ a {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   color: #091473;
   box-shadow: 0 4px 12px rgba(9, 20, 115, 0.2);
+  justify-content: center;
+  align-items: center;
 }
 
 .projects:hover {
