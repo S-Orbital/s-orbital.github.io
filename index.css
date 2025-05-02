@@ -117,3 +117,30 @@ h1.aboutMe, h2.aboutMe, h3.aboutMe {
   }
 }
 
+p.aboutMe {
+  position: relative;
+  display: inline-block;
+  color: #091473;
+  transition: color 0.3s ease;
+}
+
+p.aboutMe::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+p.aboutMe:hover {
+  color: white;
+}
+
+p.aboutMe:hover::after {
+  width: 100%;
+}
+
+
