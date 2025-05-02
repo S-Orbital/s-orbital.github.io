@@ -99,5 +99,5 @@ a {
   color: #091473;
 }
 .hidden {
-  visibility: hidden;
+  display: none;
 }
