@@ -58,16 +58,13 @@ img {
   font-family: "Utendo-Semibold", sans-serif;
 }
 
-
 .text-group {
   display: block;
 }
 a {
   text-decoration: none;
   padding: 15px;
-  
 }
-
 
 .project-container {
   display: flex;
