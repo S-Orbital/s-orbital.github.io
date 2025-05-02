@@ -117,7 +117,6 @@ h1.aboutMe, h2.aboutMe, h3.aboutMe, #username, p.aboutMe {
 p.aboutMe {
   position: relative;
   display: inline;
-  color: #091473;
   transition: color 0.3s ease;
   background-image: linear-gradient(white, white);
   background-size: 0% 2px;
