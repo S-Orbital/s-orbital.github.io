@@ -64,3 +64,40 @@ img {
 .text-group {
   display: block;
 }
+a {
+  text-decoration: none;
+  padding: 15px;
+  
+}
+
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: start;
+  padding: 20px;
+}
+
+.projects {
+  background: linear-gradient(145deg, #0d0d2b, #1a1a40);
+  border: 1px solid #091473;
+  border-radius: 16px;
+  padding: 20px;
+  width: 240px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: #091473;
+  box-shadow: 0 4px 12px rgba(9, 20, 115, 0.2);
+}
+
+.projects:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(9, 20, 115, 0.4);
+}
+
+.projects p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #091473;
+}
+
