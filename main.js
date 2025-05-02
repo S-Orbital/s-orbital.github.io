@@ -5,9 +5,9 @@ async function updateBio() {
 
     document.getElementById('avatar').src = data.avatar_url || '';
     document.getElementById('bio').innerText = data.bio || '';
-    document.getElementById('status').innerHTML = data.status?.emoji
+    /*document.getElementById('status').innerHTML = data.status?.emoji
       ? emojione.shortnameToImage(`${data.status.emoji} ${data.status.message || ''}`)
-      : '';
+      : '';  */
   } catch (err) {
     console.error('Fetch failed:', err);
     document.getElementById('bio').innerText = '';
