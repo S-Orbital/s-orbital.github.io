@@ -105,7 +105,7 @@ a {
 h1.aboutMe, h2.aboutMe, h3.aboutMe {
   color: #091473;
   text-shadow: 0 0 5px #091473, 0 0 10px #091473, 0 0 20px #091473;
-  animation: glowPulse 2s ease-in-out infinite;
+  animation: glowPulse 10s ease-in-out infinite;
 }
 
 @keyframes glowPulse {
