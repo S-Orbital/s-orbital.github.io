@@ -27,7 +27,7 @@ h1, h2, h3 {
   font-family: "Utendo-Bold", sans-serif;
 }
 .aboutMe, body {
-  color: #2512cc;
+  color: #1a00ff;
   font-size: 125%;
 }
 
@@ -36,7 +36,7 @@ h1, h2, h3 {
   align-items: center;
   padding: 20px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 1) 28%, rgba(5, 0, 36, 1) 72%);
-  color: #2512cc;
+  color: #1a00ff;
 }
 img {
   border-radius: 50%;
@@ -81,7 +81,7 @@ a {
   padding: 20px;
   width: 240px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  color: #091473;
+  color: #1a00ff;
   box-shadow: 0 4px 12px rgba(9, 20, 115, 0.2);
 }
 
@@ -93,14 +93,14 @@ a {
 .projects p {
   margin: 0;
   font-size: 1.1rem;
-  color: #091473;
+  color: #1a00ff;
 }
 .hidden {
   display: none;
 }
 
 h1.aboutMe, h2.aboutMe, h3.aboutMe, #username, p.aboutMe, body {
-   color: #032557;
+   color: #1a00ff;
  /* text-shadow: 0 0 3px #032557, 0 0 6px #032557; */
 }
 
