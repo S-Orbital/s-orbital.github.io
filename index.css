@@ -33,6 +33,13 @@ h1, h2, h3 {
 }
 body.discord {
   font-family: "Pixelify-Sans", sans-serif;
+  justify-content: center;
+}
+p.discord, h1.discord, h2.discord, h3.discord, h4.discord, h5.discord {
+  background: linear-gradient(to top, #000FFF, #0071DB);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
 }
 .aboutMe, body {
   color: #1a00ff;
