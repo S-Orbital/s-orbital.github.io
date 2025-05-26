@@ -138,3 +138,87 @@ p.aboutMe:hover {
   color: white;
   background-size: 100% 2px;
 }
+
+
+
+
+
+
+
+section {
+  margin: 40px 20px;
+  padding: 20px;
+  background: linear-gradient(145deg, #0d0d2b, #1a1a40);
+  border-radius: 16px;
+  border: 1px solid #091473;
+  box-shadow: 0 4px 12px rgba(9, 20, 115, 0.2);
+  color: #1a00ff;
+}
+
+section h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
+section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+section ul li {
+  padding: 6px 0;
+  font-size: 1.1rem;
+}
+
+section.update p {
+  margin: 6px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+table th, table td {
+  border: 1px solid #1a00ff;
+  padding: 10px;
+  text-align: center;
+}
+
+table th {
+  background-color: #091473;
+  color: white;
+}
+
+table td {
+  color: #1a00ff;
+}
+
+@media (max-width: 600px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  table thead {
+    display: none;
+  }
+
+  table td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 45%;
+    padding-left: 10px;
+    font-weight: bold;
+    text-align: left;
+  }
+}
+
