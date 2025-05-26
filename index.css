@@ -104,11 +104,7 @@ h1.aboutMe, h2.aboutMe, h3.aboutMe, #username, p.aboutMe, body {
  /* text-shadow: 0 0 3px #032557, 0 0 6px #032557; */
 }
 
-#aboutMeContainer p + p {
-  border-top: 1px solid #091473; /* Change color to match your design */
-  padding-top: 10px;
-  margin-top: 10px;
-}
+
 
 
 p.aboutMe {
