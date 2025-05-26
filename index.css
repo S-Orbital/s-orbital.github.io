@@ -100,17 +100,17 @@ a {
 }
 
 h1.aboutMe, h2.aboutMe, h3.aboutMe, #username, p.aboutMe, body {
-  color: #091473;
-  text-shadow: 0 0 5px #032557, 0 0 10px #032557, 0 0 20px #032557;
-  animation: glowPulse 10s ease-in-out infinite;
+   color: #091473;
+  text-shadow: 0 0 3px #032557, 0 0 6px #032557;
+  animation: glowPulse 6s ease-in-out infinite;
 }
 
 @keyframes glowPulse {
   0%, 100% {
-    text-shadow: 0 0 10px #032557, 0 0 20px #032557, 0 0 40px #032557;
+    text-shadow: 0 0 4px #032557, 0 0 8px #032557;
   }
   50% {
-    text-shadow: 0 0 20px #032557, 0 0 40px #032557, 0 0 80px #032557;
+    text-shadow: 0 0 6px #032557, 0 0 12px #032557;
   }
 }
 
