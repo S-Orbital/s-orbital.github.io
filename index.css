@@ -32,10 +32,11 @@ h1, h2, h3 {
   font-family: "Utendo-Bold", sans-serif;
 }
 body.discord {
-  font-family: "Pixelify-Sans", sans-serif;
   justify-content: center;
 }
-p.discord, h1.discord, h2.discord, h3.discord, h4.discord, h5.discord {
+p.discord, h1.discord, h2.discord, h3.discord, h4.discord, h5.discord, h6.discord {
+    font-family: "Pixelify-Sans", sans-serif;
+
   background: linear-gradient(to top, #000FFF, #0071DB);
                 -webkit-background-clip: text;
                 background-clip: text;
