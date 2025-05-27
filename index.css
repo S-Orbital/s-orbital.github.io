@@ -283,5 +283,62 @@ code {
   color: white;
 }
 
+.comparison-cards {
+  margin: 40px 20px;
+  padding: 20px;
+  background: linear-gradient(145deg, #0d0d2b, #1a1a40);
+  border-radius: 16px;
+  border: 1px solid #091473;
+  box-shadow: 0 4px 12px rgba(9, 20, 115, 0.2);
+}
+
+.comparison-cards h2 {
+  font-size: 1.8rem;
+  color: #1a00ff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.comparison-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.bot-card {
+  background: linear-gradient(145deg, #0a0a2f, #14143f);
+  border: 1px solid #091473;
+  border-radius: 16px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 4px 12px rgba(9, 20, 115, 0.25);
+  color: #1a00ff;
+}
+
+.bot-card h3 {
+  font-size: 1.4rem;
+  margin-top: 0;
+  color: #00cfff;
+  font-family: "Utendo-Bold", sans-serif;
+  text-align: center;
+}
+
+.bot-card ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.bot-card li {
+  padding: 6px 0;
+  font-size: 1.05rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bot-card li strong {
+  flex: 1;
+}
 
 
