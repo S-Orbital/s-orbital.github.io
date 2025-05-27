@@ -192,7 +192,7 @@ table th {
   color: white;
 }
 
-table td {
+table td, table th {
   color: #1a00ff;
 }
 
