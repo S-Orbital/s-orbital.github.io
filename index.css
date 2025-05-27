@@ -251,5 +251,8 @@ section.install {
   font-family: monospace;
   margin-top: 10px;
 }
+code {
+  color: #0071DB; /* or any light blue you prefer */
+}
 
 
