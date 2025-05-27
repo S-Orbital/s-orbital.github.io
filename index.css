@@ -286,13 +286,12 @@ code {
 .comparison-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
   justify-content: center;
+  gap: 20px;
   margin-top: 20px;
 }
 
 .bot-card {
-  flex: 1 1 280px;
   background: linear-gradient(145deg, #0d0d2b, #1a1a40);
   border: 1px solid #091473;
   border-radius: 16px;
@@ -302,8 +301,10 @@ code {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  max-width: 300px;
+  width: 300px; /* Fixed width to ensure consistent card sizing */
+  box-sizing: border-box;
 }
+
 
 .bot-card h3 {
   margin-top: 0;
