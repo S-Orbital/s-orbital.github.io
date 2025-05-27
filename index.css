@@ -297,7 +297,7 @@ code {
 
 .bot-card {
   flex: 1 1 calc(33.333% - 20px); /* 3 per row with gap accounted */
-  max-width: 550px;
+  max-width: 500px;
   min-width: 250px;
   background: linear-gradient(145deg, #0d0d2b, #1a1a40);
   border: 1px solid #091473;
