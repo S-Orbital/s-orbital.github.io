@@ -259,16 +259,16 @@ code {
   top: 0;
   z-index: 999;
   margin: 30px;
-  background-color: #000A2A; /* dark blue */
+  background-color: black;
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 5px;
   padding: 5px 0;
-  border-bottom: 5px solid #007BFF; /* bright blue underline */
+  border-bottom: 5px solid #1a00ff; /* bright blue underline */
 }
 
 #sub-header a {
-  color: #00cfff;
+  color: #1a00ff;
   font-family: "Pixelify-Sans", sans-serif;
   font-size: 0.9rem;
   text-decoration: none;
