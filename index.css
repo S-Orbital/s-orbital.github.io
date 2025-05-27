@@ -254,29 +254,34 @@ section.install {
 code {
   color: #0071DB; /* or any light blue you prefer */
 }
+
+
 #sub-header {
   position: sticky;
   top: 0;
   z-index: 999;
-  margin: 30px;
-  background-color: black;
+  background-color: black; /* dark blue */
   display: flex;
   justify-content: center;
-  gap: 5px;
-  padding: 5px 0;
-  border-bottom: 5px solid #1a00ff; /* bright blue underline */
+  gap: 60px; /* increased spacing between links */
+  padding: 8px 0; /* keep it minimal height */
+  border-bottom: 5px solid #1a00ff;
+  align-items: center;
+  min-height: 36px; /* keeps it thin but allows larger text */
 }
 
 #sub-header a {
   color: #1a00ff;
-  font-family: "Pixelify-Sans", sans-serif;
-  font-size: 0.9rem;
+  font-family: "Utendo-Semibold", sans-serif;
+  font-size: 1.8rem; /* roughly double size */
   text-decoration: none;
   transition: color 0.3s ease;
+  line-height: 1;
 }
 
 #sub-header a:hover {
   color: white;
 }
+
 
 
