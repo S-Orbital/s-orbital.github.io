@@ -254,5 +254,28 @@ section.install {
 code {
   color: #0071DB; /* or any light blue you prefer */
 }
+#sub-header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #000A2A; /* dark blue */
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 5px 0;
+  border-bottom: 5px solid #007BFF; /* bright blue underline */
+}
+
+#sub-header a {
+  color: #00cfff;
+  font-family: "Utendo-Semibold", sans-serif;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#sub-header a:hover {
+  color: white;
+}
 
 
