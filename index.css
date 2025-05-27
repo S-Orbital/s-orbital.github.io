@@ -221,4 +221,35 @@ table td, table th {
     text-align: left;
   }
 }
+section.install {
+  margin: 40px 20px;
+  padding: 20px;
+  background: linear-gradient(145deg, #0d0d2b, #1a1a40);
+  border-radius: 16px;
+  border: 1px solid #091473;
+  box-shadow: 0 4px 12px rgba(9, 20, 115, 0.2);
+  color: #1a00ff;
+}
+
+.install h3 {
+  margin-top: 20px;
+  font-size: 1.4rem;
+}
+
+.install ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.install pre {
+  background: #05051a;
+  border: 1px solid #1a00ff;
+  padding: 15px;
+  border-radius: 8px;
+  overflow-x: auto;
+  color: #00ffcc;
+  font-family: monospace;
+  margin-top: 10px;
+}
+
 
